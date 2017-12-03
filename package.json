@@ -1,0 +1,21 @@
+{
+  "name": "angularjs-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "./node_modules/.bin/live-server .",
+    "eslint": "./node_modules/.bin/eslint --fix ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.7",
+    "angular-route": "^1.6.7",
+    "live-server": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.12.1"
+  }
+}

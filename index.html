@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="app/styles/nav.css"/>
+  <link rel="stylesheet" type="text/css" href="app/styles/main.css"/>
+  <title>Document</title>
+</head>
+
+<body>
+  <nav-component></nav-component>
+  <div class="Main" ng-view></div>
+
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="node_modules/angular-route/angular-route.js"></script>
+  <script src="app/app.js"></script>
+  <script src="app/controllers/home.js"></script>
+  <script src="app/controllers/about.js"></script>
+  <script src="app/controllers/contacts.js"></script>
+  <script src="app/controllers/gallery.js"></script>
+  <script src="app/components/nav.js"></script>
+</body>
+
+</html>
