@@ -1,5 +1,12 @@
+<!-- NAV CONTAINER -->
 <ul class="Nav">
+  <!-- NAV BUTTON -->
+  <!-- REPEAT FOR EACH BUTTON IN navComponent.buttons -->
   <li class="Nav__Button" ng-repeat="button in navComponent.buttons">
+    <!-- BUTTON LINK -->
     <a class="Button__Link" href={{button.href}}>{{button.label}}</a>
+    <!-- END BUTTON LINK -->
   </li>
+  <!-- END NAV BUTTON -->
 </ul>
+<!-- END NAV CONTAINER -->

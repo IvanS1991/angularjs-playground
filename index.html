@@ -1,27 +1,50 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myApp">
+<html lang="en" ng-app="myApp"> <!-- BOOTSTRAPPING THE myApp COMPONENT AS THE ROOT COMPONENT -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="app/styles/nav.css"/>
-  <link rel="stylesheet" type="text/css" href="app/styles/main.css"/>
-  <title>Document</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="app/styles/nav.css" />
+    <link rel="stylesheet" type="text/css" href="app/styles/main.css" />
+    <title>Document</title>
+  </head>
 
-<body>
-  <nav-component></nav-component>
-  <div class="Main" ng-view></div>
+  <body>
+    <!-- NAV -->
+    <nav-component></nav-component>
+    <!-- END NAV -->
 
-  <script src="node_modules/angular/angular.js"></script>
-  <script src="node_modules/angular-route/angular-route.js"></script>
-  <script src="app/app.js"></script>
-  <script src="app/controllers/home.js"></script>
-  <script src="app/controllers/about.js"></script>
-  <script src="app/controllers/contacts.js"></script>
-  <script src="app/controllers/gallery.js"></script>
-  <script src="app/components/nav.js"></script>
-</body>
+    <!-- ROUTER OUTLET -->
+    <div class="Main" ng-view></div>
+    <!-- END ROUTER OUTLET -->
+
+    <!-- ANGULAR -->
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-route/angular-route.js"></script>
+    <!-- END ANGULAR -->
+
+    <!-- APP -->
+    <script src="app/app.js"></script>
+    <script src="app/routing.js"></script>
+    <!-- END APP -->
+
+    <!-- PROVIDERS -->
+    <script src="app/providers/values/base-href.js"></script>
+    <script src="app/providers/values/service-provider-factory.js"></script>
+    <script src="app/providers/factories/button.js"></script>
+    <!-- END PROVIDERS -->
+
+    <!-- CONTROLLERS -->
+    <script src="app/controllers/home.js"></script>
+    <script src="app/controllers/about.js"></script>
+    <script src="app/controllers/contacts.js"></script>
+    <script src="app/controllers/gallery.js"></script>
+    <!-- END CONTROLLERS -->
+
+    <!-- COMPONENTS -->
+    <script src="app/components/nav.js"></script>
+    <!-- END COMPONENTS -->
+  </body>
 
 </html>
